@@ -16,7 +16,34 @@ public class Calculator {
         System.out.println("Enter Operator : +, -, *, /");
         operator = newObj.next().charAt(0);
 
+        newObj.close();
 
+        switch (operator) {
+
+            case '+':
+                result = num1 + num2;
+                System.out.println(num1 + " + " + num2 + " = " + result);
+                break;
+
+            case '-':
+                result = num1 - num2;
+                System.out.println(num1 + " - " + num2 + " = " + result);
+                break;
+
+            case '*':
+                result = num1 * num2;
+                System.out.println(num1 + " * " + num2 + " = " + result);
+                break;
+
+            case '/':
+                result = num1 / num2;
+                System.out.println(num1 + " / " + num2 + " = " + result);
+                break;
+                
+            default:
+                System.out.println("Invalid Operator");
+                break;
+        }
 
     }
 }
